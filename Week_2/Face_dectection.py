@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 # Load the image and resize it for better display
-img = cv2.imread(r"C:\Users\91797\Downloads\Haar cascade\Example-face-forward-pictures-From-left-to-right-top-to-bottom-anger-contempt.png")
+img = cv2.imread(r"Example-face-forward-pictures-From-left-to-right-top-to-bottom-anger-contempt.png")
 img = cv2.resize(img, (640, 800))
 
 # Create a Preprocessing function to apply necessary operations on the input image
@@ -19,7 +19,7 @@ def preProcessing(img):
 imgPre = preProcessing(img)
 
 # Load the Haar Cascade Classifier for face detection
-H_C = cv2.CascadeClassifier("C:/Users/91797/Downloads/Haar cascade/haarcascade_frontalface_default.xml")
+H_C = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # Detect faces in the preprocessed image
 F_R = H_C.detectMultiScale(imgPre, scaleFactor=1.1, minNeighbors=3)

@@ -7,8 +7,8 @@ def recognize_faces_webcam():
     # Load face encodings for known faces (you need to prepare this in advance)
     # Replace "known_faces" with a dictionary where keys are names and values are face encodings
     known_faces = {
-        "Abhishek": face_recognition.face_encodings(face_recognition.load_image_file(r"C:\Users\91797\Desktop\New folder\pic\frame135.jpg"))[0],
-        "Hardik": face_recognition.face_encodings(face_recognition.load_image_file(r"C:\Users\91797\Desktop\New folder\pic\WhatsApp Image 2023-12-25 at 02.16.15_e7815314.jpg"))[0],
+        "Swarup": face_recognition.face_encodings(face_recognition.load_image_file(r"Swar.jpg"))[0]
+        # "Hardik": face_recognition.face_encodings(face_recognition.load_image_file(r"C:\Users\91797\Desktop\New folder\pic\WhatsApp Image 2023-12-25 at 02.16.15_e7815314.jpg"))[0],
         # Add more known faces as needed
     }
 
@@ -53,3 +53,5 @@ def recognize_faces_webcam():
 
 # Call the function to start facial recognition from the webcam
 recognize_faces_webcam()
+
+
